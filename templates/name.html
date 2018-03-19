@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加入聊天室</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+<h2></h2>
+
+<form class="form-inline" action='{{ url_for('get_index_page') }}' method="post">
+  <div class="form-group mb-2">
+      <h4>请输入你的名字</h4>
+  </div>
+    <br>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">Password</label>
+    <input name="user" class="form-control" id="inputPassword2" placeholder="name">
+  </div>
+  <button class="btn btn-primary mb-2">提交</button>
+</form>
+
+</body>
+</html>
